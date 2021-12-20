@@ -24,6 +24,15 @@ body {
   font-size: 62.8%;
 }
 
+/* span {
+  background-color: black;
+  display: flex;
+  height: 5px;
+  width: 3em;
+  margin: 5px auto;
+  border-radius: 2px;
+} */
+
 .navbar {
   border-bottom: 1px solid #dee2e6;
   display: flex;
@@ -76,6 +85,14 @@ body {
   align-items: center;
   top: 2%;
 }
+
+/* .ham span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+} */
 
 .br-1,
 .br-2,
@@ -286,9 +303,5 @@ li > a:focus {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url("/images/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
   }
 }
