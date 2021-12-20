@@ -1,7 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none
+}
+
+header {
+  width: 100%;
+}
+
+span {
+  background-color: black;
+  height: 4px;
+  padding: 5%;
+  width: 3em;
+  margin: 15%;
+  border-radius: 2px;
+  align-self: flex-end;
+}
+
+
 .navbar {
   background-color: #fff;
   border-bottom: 1px solid #dee2e6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 20vw;
 }
+
 .navbar-default {
   background-image: 
   url('/images/logo01.svg'),
@@ -9,20 +37,58 @@
   background-repeat: 
     no-repeat,
     no-repeat;
-  background-position:
-    left top,
-    left top,  
+  background-size: 
+    20%,
+    20%;    
+  background-position-x:
+    0%,
+    12%;
+} 
+
+.menu li {
+  font-family: poppins, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  background-color: #fff;
+  transition: 0.2s 0.1s;
+  top: 25vh;
+  position: relative;
+  margin-top: 25%;
+  list-style: none;
+  text-decoration: none !important;
+  text-align: center;
+
 }
+
 
 .ham {
   display: flex;
-  
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.2s 0.1s;
+  background: transparent;
+  background-color: white;
+  border: none;  
+  position: absolute; 
+  margin: 5%;
+  left: 80%;
+  align-items: center;
 }
 
 .br-1,
 .br-2,
 .br-3 {
   color: black;
-  font-size: 1.5rem; 
+  font-size: 1rem;
 }
 
+@media (min-width: 868px) {
+  .ham {
+    display: none;
+  }
+
+  .navbar-default {
+    background-image: none;
+  }
+
+}
