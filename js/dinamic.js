@@ -50,5 +50,5 @@ Document.onload = (projects) => {
       </div>
     `;
   }
-  document.getElementById('projects').appendChild(div);
+  document.querySelector('.portfolio').appendChild(div);
 };

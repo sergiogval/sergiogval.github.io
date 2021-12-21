@@ -23,7 +23,7 @@ body {
   font-size: 62.8%;
 }
 
-div {
+/* div {
   display: block;
 }
 
@@ -33,4 +33,109 @@ div {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+} */
+
+fieldset {
+  border: none;
+  text-align: center;
+  background-color: #f9f9fa;
+  background-image: url("..//images/landing.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-block: 2em;
+  width: 100%;
+}
+
+.introcontact {
+  line-height: 1em;
+  max-width: 90%;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  padding: 2%;
+  margin: 5%;
+  align-items: center;
+  justify-content: center;
+  color: #1a2236;
+}
+
+.name {
+  width: 90%;
+  height: 8vh;
+  background-color: white;
+  margin: 0.8em 1em 0.8em 1em;
+  border: solid 2px #dfdfe0;
+  border-radius: 4px;
+  outline: none;
+}
+
+.message {
+  width: 90%;
+  height: 20vh;
+  background-color: white;
+  margin: 0.2em 1em 0.8em 1em;
+  border: solid 2px #dfdfe0;
+  border-radius: 4px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "poppins", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  list-style-image: none !important;
+  background-color: #1a2236;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0 8% 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#msg-error {
+  font-family: Inter, Arial, sans-serif;
+  color: rgba(255, 0, 0, 0.85);
+  text-decoration: underline;
+  text-align: center;
+}
+
+.form > .email-input-error {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgba(255, 0, 0, 0.85);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.85);
+}
+
+.resume {
+  display: flex;
+  flex-direction: row;
+  color: #98dede;
+  font-size: 1.5em;
+  padding: 5%;
+  margin: 3% 2% 5% 1%;
+  justify-content: left;
+  background-image: url("..//images/download1.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 10em center;
+  width: 100vw;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.name:focus,
+.message:focus {
+  border: solid 2px #1a2236;
 }

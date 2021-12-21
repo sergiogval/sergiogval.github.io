@@ -115,7 +115,7 @@ body {
   transition: 0.2s 0.1s;
   justify-content: center;
   height: 70vh;
-  width: 100vw;
+  width: 100%;
   margin-top: 20vw;
   background-color: #fff;
   background-image:
