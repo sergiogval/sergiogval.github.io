@@ -154,7 +154,7 @@ body {
 }
 
 .br-1.animated {
-  transform: rotate(-45deg) translate(-10px, 11px);
+  transform: rotate(-45deg) translate(-10px, 2px) scale(1.5);
 }
 
 .br-2.animated {
@@ -162,7 +162,7 @@ body {
 }
 
 .br-3.animated {
-  transform: rotate(45deg) translate(-10px, -11px);
+  transform: rotate(45deg) translate(-10px, -2px) scale(1.5);
 }
 
 .home {
@@ -262,6 +262,7 @@ li > a:focus {
     position: fixed;
     width: 100%;
     background-color: #fff;
+    z-index: 1;
   }
 
   .ham {
@@ -288,6 +289,13 @@ li > a:focus {
     font-weight: 400;
   }
 
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 10vh;
+  }
+
   .desktop-home {
     padding: 10%;
     display: flex;
@@ -295,13 +303,14 @@ li > a:focus {
     align-items: start;
     flex-direction: column;
     right: 50%;
-    width: 50%;
+    width: 100%;
+    grid-column: 1;
   }
 
   .desk-image {
     display: block;
-    position: fixed;
     width: 100%;
-    height: 100%;
+    grid-column: 2;
+    left: 50%;
   }
 }
