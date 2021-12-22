@@ -3,14 +3,16 @@ const navbar = document.querySelector('.navbar');
 const ham = document.querySelector('.ham');
 const menu = document.querySelector('.menu');
 const close = document.querySelectorAll('.ham span');
-// const mobileImage = document.querySelector('.background-image');
+const mobileImage = document.querySelector('.mobile-image');
+// const menuImage = document.querySelector('.menu-image');
 const links = document.querySelectorAll('.link-sections');
 
 // Mobile Menu Function
 ham.addEventListener('click', () => {
   menu.classList.toggle('active');
   navbar.classList.toggle('active');
-  // mobileImage.style.backgroundImage = "url('images/mobile-menu-img.png')";
+  mobileImage.style.backgroundImage = 'none';
+  // menuImage.style.backgroundImage = "url('images/mobile-menu-img.png')";
   close.forEach((child) => {
     child.classList.toggle('animated');
   });
