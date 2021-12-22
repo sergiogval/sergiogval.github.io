@@ -3,7 +3,7 @@ const navbar = document.querySelector('.navbar');
 const ham = document.querySelector('.ham');
 const menu = document.querySelector('.menu');
 const close = document.querySelectorAll('.ham span');
-const mobileImage = document.querySelector('.mobile-image');
+// const mobileImage = document.querySelector('.mobile-image');
 // const menuImage = document.querySelector('.menu-image');
 const links = document.querySelectorAll('.link-sections');
 
@@ -11,7 +11,7 @@ const links = document.querySelectorAll('.link-sections');
 ham.addEventListener('click', () => {
   menu.classList.toggle('active');
   navbar.classList.toggle('active');
-  mobileImage.style.backgroundImage = 'none';
+  // mobileImage.style.backgroundImage = 'none';
   // menuImage.style.backgroundImage = "url('images/mobile-menu-img.png')";
   close.forEach((child) => {
     child.classList.toggle('animated');
