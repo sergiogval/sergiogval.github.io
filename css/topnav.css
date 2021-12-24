@@ -152,8 +152,8 @@ body {
 
 .desktop-home {
   font-size: 0.8em;
-  padding: 10%;
-  margin: 2%;
+  padding: 8%;
+  margin: 0;
   display: flex;
   justify-content: start;
   align-items: start;
@@ -725,6 +725,14 @@ footer {
     display: none;
   }
 
+  .intro {
+    font-size: 2em;
+  }
+
+  .btn-1 {
+    font-size: 2em;
+  }
+
   .name {
     align-items: center;
     justify-content: left;
@@ -881,7 +889,7 @@ footer {
   }
 
   .aboutheader {
-    margin-left: -30%;
+    margin: 0%;
   }
 
   .container-about2 {
