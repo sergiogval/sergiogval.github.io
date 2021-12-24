@@ -62,7 +62,7 @@ body {
   background-color: #fff;
   transition: 0.2s 0.1s;
   position: relative;
-  margin-top: 38%;
+  margin-top: 20%;
   text-align: center;
   list-style: none;
   line-height: 4em;
@@ -106,9 +106,8 @@ body {
   animation: muestraMenu 350ms ease-in-out both;
   transition: 0.2s 0.1s;
   justify-content: center;
-  height: 70vh;
+  height: 80%;
   width: 100vw;
-  margin-top: 20vw;
   background-color: #fff;
   background-image:
     url("../images/dots-mobile.png"),
@@ -271,7 +270,7 @@ body {
   background-position: 70% center;
 }
 
-.btn-4 {
+.btn4 {
   background-color: #1a2236;
   color: #fff;
   font-family: "poppins", sans-serif;
@@ -294,9 +293,18 @@ body {
   border: solid 2px #f5f5f5;
 }
 
-.btn-4:hover,
-.btn-4:focus,
-.btn-4:active {
+.btn-1:focus,
+.btn-1:hover,
+.btn-1:active,
+.btn-2:hover,
+.btn-2:focus,
+.btn-2:active,
+.btn-3:hover,
+.btn-3:focus,
+.btn-3:active,
+.btn4:hover,
+.btn4:focus,
+.btn4:active {
   background-color: #f5f5f5;
   color: #1a2236;
   border: solid 1px #1a2236;
@@ -355,12 +363,16 @@ li > a:focus {
   transition: 0.2s 0.1s;
   margin: 0;
   padding: 0;
+  row-gap: 0;
 }
 
 .cardPicture {
   width: 100vw;
   margin: 0;
   padding: 0;
+  position: relative;
+  row-gap: 0;
+  margin-block: -4px;
 }
 
 .cardTitle {
@@ -373,6 +385,7 @@ li > a:focus {
   margin: 0 0 0 8%;
   padding: 2%;
   letter-spacing: 5px;
+  line-height: 1.5em;
 }
 
 .cardLanguages {
@@ -523,7 +536,6 @@ footer {
 }
 
 .aboutheader {
-  text-align: left;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -532,7 +544,8 @@ footer {
   font-weight: 300;
   padding-top: 5%;
   justify-self: left;
-  margin-left: 10%;
+  margin: 0%;
+  padding-left: 12%;
 }
 
 .introabout {
@@ -564,7 +577,7 @@ footer {
   grid-column: 1;
   grid-row: 1;
   color: #fff;
-  font-size: 4em;
+  font-size: 2em;
   height: 90vw;
   width: 90vw;
   background-color: #1c528a;
@@ -584,7 +597,7 @@ footer {
   grid-column: 1;
   grid-row: 2;
   color: #fff;
-  font-size: 4em;
+  font-size: 2em;
   height: 90vw;
   width: 90vw;
   background-color: #e2505c;
@@ -604,7 +617,7 @@ footer {
   grid-column: 1;
   grid-row: 3;
   color: #fff;
-  font-size: 4em;
+  font-size: 2em;
   height: 90vw;
   width: 90vw;
   background-color: #febf52;
@@ -631,7 +644,6 @@ footer {
   justify-content: flex-start;
   text-align: center;
   font-family: "poppins", sans-serif;
-  font-size: 1.6em;
   line-height: 2em;
   list-style-type: none !important;
   text-decoration: none !important;
@@ -646,17 +658,6 @@ footer {
   margin: 0;
   padding: 0;
 }
-
-/* fieldset {
-  border: none;
-  text-align: center;
-  background-color: #f9f9fa;
-  background-image: url("..//images/landing.png");
-  background-repeat: no-repeat;
-  background-position: left top;
-  margin-block: 2em;
-  width: 100%;
-} */
 
 @media (min-width: 868px) {
   body {
@@ -686,6 +687,7 @@ footer {
     text-align: center;
     margin-block: 2%;
     font-size: 2em;
+    line-height: 1.5em;
   }
 
   .link-sections {
@@ -725,12 +727,23 @@ footer {
     display: none;
   }
 
+  .mobile-home {
+    display: none;
+  }
+
+  .nombre {
+    font-size: 7em;
+    margin-left: 7%;
+  }
+
   .intro {
     font-size: 2em;
   }
 
   .btn-1 {
     font-size: 2em;
+    width: 70%;
+    padding: 1em;
   }
 
   .name {
@@ -928,7 +941,7 @@ footer {
     grid-column: 1;
     grid-row: 1;
     color: #fff;
-    font-size: 0.8em;
+    font-size: 1.3em;
     height: 20vw;
     width: 20vw;
     background-color: #1c528a;
@@ -952,7 +965,7 @@ footer {
     grid-column: 2;
     grid-row: 1;
     color: #fff;
-    font-size: 0.8em;
+    font-size: 1.3em;
     height: 20vw;
     width: 20vw;
     background-color: #e2505c;
@@ -976,7 +989,7 @@ footer {
     grid-column: 1;
     grid-row: 2;
     color: #fff;
-    font-size: 0.8em;
+    font-size: 1.3em;
     height: 20vw;
     width: 20vw;
     background-color: #febf52;

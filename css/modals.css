@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+.modal {
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s 0.5s;
+}
+
+.modalContent {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  background-color: white;
+  text-align: left;
+  list-style: none;
+}
+
+.modalClose {
+  display: block;
+  padding: 3%;
+  width: 10%;
+  margin: 0;
+  left: 90%;
+  position: absolute;
+  cursor: pointer;
+
+  /* font-weight: 500; */
+}
+
+.modalTitle {
+  font-size: 3em;
+  line-height: 1em;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+  top: 0;
+  margin: 10% 0 5% 5%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  flex-wrap: wrap;
+}
+
+.modalLanguages {
+  display: flex;
+  flex-direction: row !important;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.2em;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  position: relative;
+  padding: 2% 4%;
+  margin: 5% 0;
+  width: 100%;
+}
+
+.badge {
+  display: flex;
+  padding: 1% 3%;
+  border: solid 1px #1a2236;
+  border-radius: 2px;
+}
+
+.modalBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1a2236;
+  font-size: 1em;
+  font-family: "Playfair Display", serif;
+  font-weight: normal;
+  background-color: white;
+  margin-block: 10%;
+  padding: 2%;
+  width: 100%;
+}
+
+#picture {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  height: 50vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.modalDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+  font-size: 3em;
+  margin: 5%;
+  width: 90%;
+  height: 90%;
+  position: inherit;
+}
+
+.modalDemo {
+  background-image: url('../images/btnModal.png');
+  background-repeat: no-repeat;
+  background-color: white;
+  font-weight: 400;
+  color: #1a2236;
+  background-size: 6%;
+  background-position: 80% center;
+  width: 50%;
+  margin-block: 2%;
+  font-size: 1.8em;
+  border: solid 1px #1a2236;
+  column-gap: 5%;
+  text-rendering: unset;
+}
+
+.modalSource {
+  background-image: url('../images/ic_github2.png');
+  background-repeat: no-repeat;
+  background-color: white;
+  font-weight: 400;
+  color: #1a2236;
+  background-size: 7%;
+  background-position: 80% center;
+  width: 50%;
+  margin-block: 2%;
+  font-size: 2em;
+  border: solid 1px #1a2236;
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 90%;
+  }
+
+  .modal {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border: solid 60px #1a2236;
+    z-index: 100;
+  }
+
+  .modalContent {
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    background-color: white;
+    list-style: none;
+  }
+
+  .modalClose {
+    display: flex;
+    padding: 3%;
+    justify-self: right;
+    width: 10%;
+    margin: 1%;
+    left: 90%;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .modalTitle {
+    top: 10vh;
+    margin: 7% 0 0 0;
+    padding: 1em  0.8em;
+    justify-content: start;
+    align-items: center;
+  }
+
+  #picture {
+    display: flex;
+    width: 80%;
+    margin: 4%;
+    padding: 2%;
+    position: relative;
+  }
+
+  .modalBody {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #1a2236;
+    font-size: 1em;
+    font-family: "Playfair Display", serif;
+    font-weight: normal;
+    background-color: white;
+    margin: 10% 5%;
+    padding: 2% 10%;
+    width: 90%;
+    top: 25%;
+  }
+
+  .modalDescription {
+    width: 80%;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .modalDemo,
+  .modalSource {
+    position: relative;
+  }
+}
