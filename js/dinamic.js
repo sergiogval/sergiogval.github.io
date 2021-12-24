@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 const modal = document.querySelector('.modal');
 const modalTitle = document.querySelector('.modalTitle');
 const languageOne = document.querySelector('#languageOne');
