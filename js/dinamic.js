@@ -8,6 +8,7 @@ const picture = document.querySelector('#picture');
 const modalDescription = document.querySelector('#modalDescription');
 const modalDemo = document.querySelector('#modalDemo');
 const modalSource = document.querySelector('#modalSource');
+const closeModal = document.getElementById('closeBtn');
 
 modal.style.display = 'none';
 
@@ -15,54 +16,54 @@ const projects = [
   {
     id: 0,
     title: 'Alien Invasion',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
     picture: '..//images/project1.png',
-    languages: ['html', 'css', 'javascript'],
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
     demo: 'https://tictactoe-game-jr.herokuapp.com/',
     source: 'https://www.github.com/sergiogval',
   },
   {
     id: 1,
     title: 'Pomodoro Clock',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
     picture: '..//images/project2.png',
-    languages: ['html', 'css', 'javascript'],
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
     demo: 'https://pomodoro-clock-jr.herokuapp.com/',
     source: 'https://www.github.com/sergiogval',
   },
   {
     id: 2,
     title: 'Weather App',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
     picture: '..//images/project3.png',
-    languages: ['html', 'css', 'javascript'],
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
     demo: 'https://weather-app-jr.herokuapp.com/',
     source: 'https://www.github.com/sergiogval',
   },
   {
     id: 3,
     title: 'Calculator',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
     picture: '..//images/project4.png',
-    languages: ['html', 'css', 'javascript'],
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
     demo: 'https://pomodoro-clock-jr.herokuapp.com/',
     source: 'https://www.github.com/sergiogval',
   },
   {
     id: 4,
     title: 'Tic Tac Toe',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
     picture: '..//images/project5.png',
-    languages: ['html', 'css', 'javascript'],
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
     demo: 'https://tictactoe-game-jr.herokuapp.com/',
     source: 'https://www.github.com/sergiogval',
   },
   {
     id: 5,
     title: 'Pomodoro Clock',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
     picture: '..//images/project6.png',
-    languages: ['html', 'css', 'javascript'],
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
     demo: 'https://pomodoro-clock-jr.herokuapp.com/',
     source: 'https://www.github.com/sergiogval',
   },
@@ -100,8 +101,7 @@ for (let i = 0; i < projects.length; i += 1) {
   createModal(i);
 }
 
-const closeModal = document.getElementById('closeBtn');
 closeModal.addEventListener('click', () => {
   const modal = document.querySelector('.modal');
-  modal.remove();
+  modal.style.display = 'none';
 });
