@@ -1,54 +1,107 @@
-// Objects
+/* eslint-disable prefer-destructuring */
+const modal = document.querySelector('.modal');
+const modalTitle = document.querySelector('.modalTitle');
+const languageOne = document.querySelector('#languageOne');
+const languageTwo = document.querySelector('#languageTwo');
+const languageThree = document.querySelector('#languageThree');
+const picture = document.querySelector('#picture');
+const modalDescription = document.querySelector('#modalDescription');
+const modalDemo = document.querySelector('#modalDemo');
+const modalSource = document.querySelector('#modalSource');
+const closeModal = document.getElementById('closeBtn');
 
-const First = {
-  title: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.', picture: '/images/project1.png', languages: ['html', 'css', 'javascript'], demo: 'https://tictactoe-game-jr.herokuapp.com/', source: 'https://www.github.com/sergiogval',
+modal.style.display = 'none';
+
+const projects = [
+  {
+    id: 0,
+    title: 'Alien Invasion',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    picture: '..//images/project1.png',
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
+    demo: 'https://tictactoe-game-jr.herokuapp.com/',
+    source: 'https://www.github.com/sergiogval',
+  },
+  {
+    id: 1,
+    title: 'Pomodoro Clock',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    picture: '..//images/project2.png',
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
+    demo: 'https://pomodoro-clock-jr.herokuapp.com/',
+    source: 'https://www.github.com/sergiogval',
+  },
+  {
+    id: 2,
+    title: 'Weather App',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    picture: '..//images/project3.png',
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
+    demo: 'https://weather-app-jr.herokuapp.com/',
+    source: 'https://www.github.com/sergiogval',
+  },
+  {
+    id: 3,
+    title: 'Calculator',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    picture: '..//images/project4.png',
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
+    demo: 'https://pomodoro-clock-jr.herokuapp.com/',
+    source: 'https://www.github.com/sergiogval',
+  },
+  {
+    id: 4,
+    title: 'Tic Tac Toe',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    picture: '..//images/project5.png',
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
+    demo: 'https://tictactoe-game-jr.herokuapp.com/',
+    source: 'https://www.github.com/sergiogval',
+  },
+  {
+    id: 5,
+    title: 'Pomodoro Clock',
+    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    picture: '..//images/project6.png',
+    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
+    demo: 'https://pomodoro-clock-jr.herokuapp.com/',
+    source: 'https://www.github.com/sergiogval',
+  },
+];
+
+const createModal = (i) => {
+  document.getElementById(`${projects[i].id}`).addEventListener('click', () => {
+    modal.style.display = 'flex';
+    modalTitle.innerText = projects[i].title;
+    languageOne.innerText = projects[i].languages[0];
+    languageTwo.innerText = projects[i].languages[1];
+    languageThree.innerText = projects[i].languages[2];
+    picture.src = projects[i].picture;
+    modalDescription.innerText = projects[i].description;
+    modalDemo.innerText = projects[i].demo;
+    modalSource.innerText = projects[i].source;
+  });
 };
-const Second = {
-  title: 'Pomodoro Clock', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.', picture: '/images/project2.png', languages: ['html', 'css', 'javascript'], demo: 'https://pomodoro-clock-jr.herokuapp.com/', source: 'https://www.github.com/sergiogval',
-};
-const Third = {
-  title: 'Weather App', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.', picture: '/images/project3.png', languages: ['html', 'css', 'javascript'], demo: 'https://weather-app-jr.herokuapp.com/', source: 'https://www.github.com/sergiogval',
-};
-const Fourth = {
-  title: 'Calculator', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.', picture: '/images/project4.png', languages: ['html', 'css', 'javascript'], demo: 'https://pomodoro-clock-jr.herokuapp.com/', source: 'https://www.github.com/sergiogval',
-};
-const Fifth = {
-  title: 'Tic Tac Toe', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.', picture: '/images/project5.png', languages: ['html', 'css', 'javascript'], demo: 'https://tictactoe-game-jr.herokuapp.com/', source: 'https://www.github.com/sergiogval',
-};
-const Sixth = {
-  title: 'Pomodoro Clock', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.', picture: '/images/project6.png', languages: ['html', 'css', 'javascript'], demo: 'https://pomodoro-clock-jr.herokuapp.com/', source: 'https://www.github.com/sergiogval',
-};
-// Array of objects
-const projects = [First, Second, Third, Fourth, Fifth, Sixth];
-const arr = projects.length;
-const div = document.createElement('div');
-// create a function to show projects
-Document.onload = (projects) => {
-  for (let i = 0; i < arr; i += 1) {
-    div.classList.add('card');
-    div.classList.add('card-image');
-    div.classList.add('card-content');
-    div.classList.add('card');
-    div.innerHTML = `
-      <div class="card-image">
-        <img src="${projects[i].picture}" alt="project">
-      </div>
-      <div class="card-content">
-        <h3 class="title">${projects[i].title}</h3>
-        <p class="description">${projects[i].description}</p>
-      </div>
-      <div class="card-footer">
-        <div class="languages">
-          <p class="language">${projects[i].languages[0]}</p>
-          <p class="language">${projects[i].languages[1]}</p>
-          <p class="language">${projects[i].languages[2]}</p>
-        </div>
-        <div class="buttons">
-          <a href="${projects[i].demo}" target="_blank" class="button">Demo</a>
-          <a href="${projects[i].source}" target="_blank" class="button">Source</a>
-        </div>
-      </div>
-    `;
-  }
-  document.querySelector('.portfolio').appendChild(div);
-};
+
+for (let i = 0; i < projects.length; i += 1) {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+  <img src=${projects[i].picture} alt=${projects[i].title} class="cardPicture" >
+  <div class="cardContent">
+  <h3 class="cardTitle">${projects[i].title}</h3>
+  <ul class="cardLanguages">
+    <li class=cardBadges>${projects[i].languages[0]}</li>
+    <li class=cardBadges>${projects[i].languages[1]}</li>
+    <li class=cardBadges>${projects[i].languages[2]}</li>
+  </ul>
+  <button type=button class="btn4" id="${projects[i].id}">See project</button>
+  </div>`;
+  document.getElementById('portfolio').appendChild(card);
+  createModal(i);
+}
+
+closeModal.addEventListener('click', () => {
+  const modal = document.querySelector('.modal');
+  modal.style.display = 'none';
+});

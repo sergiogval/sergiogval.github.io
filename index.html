@@ -1,175 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Valera Inc.</title>
-    <link rel="icon" href="images/favicon.png">
-    <link rel="stylesheet" href="css/topnav.css">
-  </head>
-  <body>
-    <!-- topnav section start -->
-    <header class="header" id="header">
-      <nav class="navbar" id="navbar">
-        <ul class="menu" id="menu">
-          <li><a class="link-sections" href="#header">Hello</a></li>
-          <li><a class="link-sections" href="#projects">Portfolio</a></li>
-          <li><a class="link-sections" href="#about">About</a></li>
-          <li><a class="link-sections" href="#form">Contact</a></li>
-        </ul>
-        <button class="ham" id="ham" type="button">
-          <span class="br-1"></span>
-          <span class="br-2"></span>
-          <span class="br-3"></span>
-        </button>
-      </nav>
-    </header>
-    <!-- topnav section end -->
-    <!-- landpage start here -->
-    <section class="home" id="home">
-      <div class="desktop-home" id="desktop-home">
-        <h1 class="nombre"> Sergio<br> Valadez </h1>
-        <p class="intro">
-          Hello! I'm an economist who also does software development!
-          I can help you build a business case,
-          product, feature or website. Take a look of my works.
-          Don’t hesitate and contact me.
-        </p>
-        <button class="btn-1" id="btn-1" type="button">Start collaboration</button>
-      </div>
-      <img id="desk-image" class="desk-image" src="images/landingdesk.png" alt="landingdesk" />
-      <!-- </div>
-        <img class="mobile-image" id="mobile-image" src="images/landing2.png" alt="landing2" />
-      </div> -->
-    </section>
-    <!-- Land page end -->
-    <!-- portfolio section start -->
-    <!-- portfolio section end -->
-    <!-- about section start -->
-    <section class="about" id="about">
-      <div class="container-about">
-        <h2 class="aboutheader">About</h2>
-        <p class="introabout">
-          Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut,
-        </p>
-        <button type=button class="btn-3">Get my CV</button>
-      </div>
-      <div class="container-about2">
-        <ul class="grid-container">
-          <li class="aboutcard">
-            <ul class="grid-item1">
-              <li class="about-title">
-                <h3>Languages</h3>
-              </li>
-              <li>JavaScript (es5/es6)</li>
-              <li>Ruby</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-          </li>
-          <li class="aboutcard">
-            <ul class="grid-item2">
-              <li class="about-title">
-                <h3>Frameworks</h3>
-              </li>
-              <li>Bootstrap</li>
-              <li>Ruby on rails</li>
-              <li>RSpec</li>
-              <li>Capibara</li>
-              <li>Selenium</li>
-            </ul>
-          </li>
-          <li class="aboutcard">
-            <ul class="grid-item3">
-              <li class="about-title">
-                <h3>Skills</h3>
-              </li>
-              <li>Codekit</li>
-              <li>Codepen</li>
-              <li>Github</li>
-              <li>GitLab</li>
-              <li>terminal</li>
-            </ul>
-          </li>
-          <li class="aboutcard">
-            <ul class="grid-item4">
-              <li><img src="/images/dots.png" width="130" alt="dots"></li>
-            </ul>
-        </ul>
-      </div>
-    </section>
-    <!-- about section end -->
-    <!-- contact section start -->
-    <form action="https://formspree.io/f/mayaljan" method="post" id="form">
-      <fieldset id="contact-header" class="contact">
-        <h2 class="contactheader">Get Started</h2>
-        <p class="introcontact">Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam,
-        <div class="form-group">
-          <label for="name">      Your Name
-            <input type="text" class="name" id="name" name="name" required maxlength="30" />
-          </label>
-          <label for="email">     Your Email
-            <input type="email" class="email" id="email" name="email" required />
-          </label>
-        </div>
-        <label class="message-label" for="message">Message</label>
-        <textarea name="message" class="message" id="message" placeholder="  Enter your message here..." required
-          maxlength="500"></textarea>
-        <div id="msg-error"></div>
-        <input id="submit" type="submit" class="btn-2" value="Start collaboration" />
-      </fieldset>
-    </form>
-  
-    <!-- Contact section end -->
-    <!-- footer section start -->
-    <footer id="footer">
-      <div class="resume">
-        <a>
-          <p>Get my CV</p>
-        </a>
-      </div>
-      <ul class="social">
-        <li class="socialicon">
-          <a href="https://stackoverflow.com/users/16350887/sergio-valadez">
-            <img src="images/ic_stackoverflow.png" alt="stackoverflow">
-          </a>
-        </li>
-        <li class="socialicon">
-          <a href="https://github.com/sergiogval">
-            <img src="images/ic_github.png" alt="Github">
-          </a>
-        </li>
-        <li class="socialicon">
-          <a href="https://twitter.com/srgvldz">
-            <img src="images/ic_twitter.png" alt="twitter">
-          </a>
-        </li>
-        <li class="socialicon">
-          <a href="https://www.linkedin.com/in/sergio-valadez-282153216/">
-            <img src="images/ic_linkedin.png" alt="linkedin">
-          </a>
-        </li>
-        <li class="socialicon">
-          <a href="https://www.instagram.com/sergioval/">
-            <img src="images/ic_instagram.png" alt="Instagram">
-          </a>
-        </li>
-        <li class="socialicon">
-          <a href="#"><img src="images/ic_angellist.png" alt="Angelist"></a>
-        </li>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Valera Inc.</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/topnav.css">
+  <link rel="stylesheet" href="css/modals.css">
+</head>
+
+<body>
+  <div class="modal" id="modales">
+    <div class="modalContent" id="modalContent">
+      <img src="images/close.png" class="modalClose" id="closeBtn" alt="Close" />
+      <h1 class="modalTitle" id="modalTitle">_</h1>
+      <ul class="modalLanguages" id="modalLanguages">
+        <li class="badge" id="languageOne"></li>
+        <li class="badge" id="languageTwo"></li>
+        <li class="badge" id="languageThree"></li>
       </ul>
-    </footer>
-    <!-- Footer section end -->
-    <!-- JS section start -->
-    <script src="js/formV.js"></script>
-    <script src="js/topnav.js"></script>
-    <script src="js/localStorage.js"></script>
-  </body>
+      <img src="#" class="modalImage" id="picture" alt="modal-img" />
+      <p  class="modalDescription" id="modalDescription"></p>
+    </div>
+    <div class="modalBody" id="modalBody">
+      <button class="modalDemo btn-3"  type="button">See Live</button>
+      <button class="modalSource btn-3"  type="button">See source</button>
+    </div>
+  </div> 
+
+  <!-- topnav section start -->
+  <header class="header" id="header">
+    <nav class="navbar" id="navbar">
+      <ul class="menu" id="menu">
+        <li><a class="link-sections" href="#header">Hello</a></li>
+        <li><a class="link-sections" href="#portfolio">Portfolio</a></li>
+        <li><a class="link-sections" href="#about">About</a></li>
+        <li><a class="link-sections" href="#form">Contact</a></li>
+      </ul>
+      <button class="ham" id="ham" type="button">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button>
+    </nav>
+  </header>
+  <!-- topnav section end -->
+  <!-- landpage start here -->
+  <section class="home" id="home">
+    <div class="desktop-home" id="desktop-home">
+      <h2 class="nombre"> Sergio<br> Valadez </h2>
+      <p class="intro">
+        Hello! I'm an economist who also does software development!
+        I can help you build a business case,
+        product, feature or website. Take a look of my works.
+        Don't hesitate and contact me.
+      </p>
+      <button class="btn-1" id="btn-1" type="button">Start collaboration</button>
+    </div>
+    <div>
+    <img id="desk-image" class="desk-image" src="images/landingdesk.png" alt="landingdesk" />
+    <img class="mobile-image" id="mobile-image" src="images/landing2.png" alt="landing2" />
+    </div>
+  </section>
+  <!-- Land page end -->
+  <!-- portfolio section start -->
+  <section id="portfolio" class="portfolio">
+    <h2 class="portfolioHeader">Projects</h2>
+  </section>
+  <!-- portfolio section end -->
+  <!-- about section start -->
+  <section class="about" id="about">
+    <div class="container-about">
+      <h2 class="aboutheader">About</h2>
+      <p class="introabout">
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut,
+      </p>
+      <button type=button class="btn-3">Get my CV</button>
+    </div>
+    <div class="container-about2">
+      <ul class="grid-container">
+        <li class="aboutcard">
+          <ul class="grid-item1">
+            <li class="about-title">
+              <h3>Languages</h3>
+            </li>
+            <li>JavaScript (es5/es6)</li>
+            <li>Ruby</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </li>
+        <li class="aboutcard">
+          <ul class="grid-item2">
+            <li class="about-title">
+              <h3>Frameworks</h3>
+            </li>
+            <li>Bootstrap</li>
+            <li>Ruby on rails</li>
+            <li>RSpec</li>
+            <li>Capibara</li>
+            <li>Selenium</li>
+          </ul>
+        </li>
+        <li class="aboutcard">
+          <ul class="grid-item3">
+            <li class="about-title">
+              <h3>Skills</h3>
+            </li>
+            <li>Codekit</li>
+            <li>Codepen</li>
+            <li>Github</li>
+            <li>GitLab</li>
+            <li>terminal</li>
+          </ul>
+        </li>
+        <li class="aboutcard">
+          <ul class="grid-item4">
+            <li><img src="/images/dots.png" width="130" alt="dots"></li>
+          </ul>
+      </ul>
+    </div>
+  </section>
+  <!-- about section end -->
+  <!-- contact section start -->
+  <form action="https://formspree.io/f/mayaljan" method="post" id="form">
+    <fieldset id="contact-header" class="contact">
+      <h2 class="contactheader">Get Started</h2>
+      <p class="introcontact">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam,
+      <div class="form-group">
+        <label for="name"> Your Name
+          <input type="text" class="name" id="name" name="name" required maxlength="30" />
+        </label>
+        <label for="email"> Your Email
+          <input type="email" class="email" id="email" name="email" required />
+        </label>
+      </div>
+      <label class="message-label" for="message">Message</label>
+      <textarea name="message" class="message" id="message" placeholder="  Enter your message here..." required
+        maxlength="500"></textarea>
+      <div id="msg-error"></div>
+      <input id="submit" type="submit" class="btn-2" value="Start collaboration" />
+    </fieldset>
+  </form>
+
+  <!-- Contact section end -->
+  <!-- footer section start -->
+  <footer id="footer">
+    <div class="resume">
+      <a>
+        <p>Get my CV</p>
+      </a>
+    </div>
+    <ul class="social">
+      <li class="socialicon">
+        <a href="https://stackoverflow.com/users/16350887/sergio-valadez">
+          <img src="images/ic_stackoverflow.png" alt="stackoverflow">
+        </a>
+      </li>
+      <li class="socialicon">
+        <a href="https://github.com/sergiogval">
+          <img src="images/ic_github.png" alt="Github">
+        </a>
+      </li>
+      <li class="socialicon">
+        <a href="https://twitter.com/srgvldz">
+          <img src="images/ic_twitter.png" alt="twitter">
+        </a>
+      </li>
+      <li class="socialicon">
+        <a href="https://www.linkedin.com/in/sergio-valadez-282153216/">
+          <img src="images/ic_linkedin.png" alt="linkedin">
+        </a>
+      </li>
+      <li class="socialicon">
+        <a href="https://www.instagram.com/sergioval/">
+          <img src="images/ic_instagram.png" alt="Instagram">
+        </a>
+      </li>
+      <li class="socialicon">
+        <a href="#"><img src="images/ic_angellist.png" alt="Angelist"></a>
+      </li>
+    </ul>
+  </footer>
+  <!-- Footer section end -->
+  <!-- JS section start -->
+  <script src="js/dinamic.js"></script>
+  <script src="js/formV.js"></script>
+  <script src="js/topnav.js"></script>
+  <script src="js/localStorage.js"></script>
+</body>
+
 </html>
