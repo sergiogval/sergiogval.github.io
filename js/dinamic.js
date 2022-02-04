@@ -64,7 +64,7 @@ const projects = [
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
     picture: '..//images/project6.png',
     languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
-    demo: 'https://pomodoro-clock-jr.herokuapp.com/',
+    demo: '`<a>https://pomodoro-clock-jr.herokuapp.com/</a>`',
     source: 'https://www.github.com/sergiogval',
   },
 ];
