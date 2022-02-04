@@ -20,7 +20,7 @@ Additional description about the project and its features.
 - Protocols: https, nft, tcp
 ## Live Demo
 
-Click here to see the [live demo](https://sergiogval.github.io).
+Click here to see the [live demo](https://sergiogval.github.io/temporal-portfolio-repo/).
 
 
 ## Getting Started

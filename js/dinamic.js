@@ -15,12 +15,12 @@ modal.style.display = 'none';
 const projects = [
   {
     id: 0,
-    title: 'Alien Invasion',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    title: 'Awesome Books',
+    description: 'This project is a simple Single Page App (SPA) that was made using no frameworks. It allows to de user  add and remove items as well as storage them locally in order to avoid lose data.',
     picture: '..//images/project1.png',
-    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
-    demo: 'https://tictactoe-game-jr.herokuapp.com/',
-    source: 'https://www.github.com/sergiogval',
+    languages: ['html/css', 'JavaScript', 'GIT'],
+    demo: 'https://sergiogval.github.io/awesome-books/',
+    source: 'https://github.com/sergiogval/awesome-books',
   },
   {
     id: 1,
