@@ -15,7 +15,7 @@ modal.style.display = 'none';
 const projects = [
   {
     id: 0,
-    title: 'Awesome-Books',
+    title: 'Books',
     description: 'This project is a simple Single Page App (SPA) that was made using no frameworks. It allows to de user  add and remove items as well as storage them locally in order to avoid lose data.',
     picture: '..//images/project1.png',
     languages: ['html/css', 'JavaScript', 'GIT'],
@@ -78,8 +78,8 @@ const createModal = (i) => {
     languageThree.innerText = projects[i].languages[2];
     picture.src = projects[i].picture;
     modalDescription.innerText = projects[i].description;
-    modalDemo.innerText = projects[i].demo;
-    modalSource.innerText = projects[i].source;
+    modalDemo.innerHTML = projects[i].demo;
+    modalSource.innerHTML = projects[i].source;
   });
 };
 
