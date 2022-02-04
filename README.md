@@ -2,7 +2,11 @@
 
 # My work portfolio
 
-> This project is a personal portfolio of my work. On Information Technology. It will be bould using HTML, css, and javascript. It also wil have a framework that is still to be defined. It could be bootstrap or something similar. I Will be creating all the code of this project on VScode and the repository will be on GitHub.
+This project has the intention to be a kind of CV regarding my
+Information Technology skills. To build it i just used HTML, CSS, and JavaScript Vanilla flavor. Not that I don't know
+how to work with them. Each one of the items on the section Projects has been carefully selected
+in order to convey a clear idea about my skills. The idea is that this page reflects what I have 
+done and how do I understand this great digital world we all live in. 
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,13 +14,13 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages: HTML, CSS, Javascript, GIT.
-- Frameworks: Bootstrap
-- Technologies used: mozilla, github, vscode, windows 10 and linux ubintu.
-
+- Major languages: HTML, CSS, JavaScript, GIT
+- Frameworks: None. 
+- Technologies used: github, vscode, WebStorm, windows 10 & kubuntu 21.10
+- Protocols: https, nft, tcp
 ## Live Demo
 
-Click here to see the [live demo](https://sergiogval.github.io).
+Click here to see the [live demo](https://sergiogval.github.io/temporal-portfolio-repo/).
 
 
 ## Getting Started
@@ -41,7 +45,8 @@ Go to the following site and clone the repository (https://github.com/sergiogval
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page]().
+<!-- TODO: include the proper link --->
 
 ## Show your support
 

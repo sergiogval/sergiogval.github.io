@@ -12,7 +12,7 @@ ham.addEventListener('click', () => {
   menu.classList.toggle('active');
   navbar.classList.toggle('active');
   // mobileImage.style.backgroundImage = 'none';
-  // menuImage.style.backgroundImage = "url('images/mobile-menu-img.png')";
+  // menuImage.style.backgroundImage = "url('images/mobile-menu-project1.png')";
   close.forEach((child) => {
     child.classList.toggle('animated');
   });
