@@ -138,8 +138,8 @@ body {
   height: 20vw;
   transition: 0.2s 0.1s;
   background-image:
-    url("..//images/logo04.svg"),
-    url("..//images/logo03.svg");
+    url("../images/logo04.svg"),
+    url("../images/logo03.svg");
   background-repeat:
     no-repeat,
     no-repeat;
@@ -184,7 +184,7 @@ body {
 .contact {
   display: block;
   background-color: #f5f5f5;
-  background-image: url("..//images/logo01.svg"), url("..//images/logo02.svg");
+  background-image: url("../images/logo01.svg"), url("../images/logo02.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: 20%, 20%;
   background-position-x: 0%, 12%;
@@ -279,7 +279,7 @@ body {
   width: 90%;
   outline: none;
   cursor: pointer;
-  background-image: url("..//images/download.png");
+  background-image: url("../images/download.png");
   background-repeat: no-repeat;
   background-size: 8%;
   background-position: 70% center;
@@ -300,7 +300,7 @@ body {
   width: 50%;
   outline: none !important;
   cursor: pointer;
-  background-image: url("..//images/Union.png");
+  background-image: url("../images/Union.png");
   background-repeat: no-repeat;
   background-size: 8%;
   background-position: 70% center;
@@ -514,7 +514,7 @@ footer {
   padding: 5%;
   margin: 3% 2% 5% 1%;
   justify-content: left;
-  background-image: url("..//images/download1.png");
+  background-image: url("../images/download1.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 10em center;
@@ -595,7 +595,7 @@ footer {
   height: 90vw;
   width: 90vw;
   background-color: #1c528a;
-  background-image: url("..//images/languages.png");
+  background-image: url("../images/languages.png");
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: right bottom;
@@ -615,7 +615,7 @@ footer {
   height: 90vw;
   width: 90vw;
   background-color: #e2505c;
-  background-image: url("..//images/frameworks.png");
+  background-image: url("../images/frameworks.png");
   background-repeat: no-repeat;
   background-size: 40%;
   background-position: right bottom;
@@ -851,7 +851,7 @@ footer {
     padding: 0;
     margin-block: 0;
     box-sizing: border-box;
-    background-image: url("..//images/formimg1.png"), url("..//images/formimg2.png");
+    background-image: url("../images/formimg1.png"), url("../images/formimg2.png");
     background-repeat: no-repeat, no-repeat;
     background-position: left top, right bottom;
     background-size: 15%, 20%;
@@ -961,7 +961,7 @@ footer {
     height: 20vw;
     width: 20vw;
     background-color: #1c528a;
-    background-image: url("..//images/languages.png");
+    background-image: url("../images/languages.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right bottom;
@@ -985,7 +985,7 @@ footer {
     height: 20vw;
     width: 20vw;
     background-color: #e2505c;
-    background-image: url("..//images/frameworks.png");
+    background-image: url("../images/frameworks.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right bottom;
@@ -1009,7 +1009,7 @@ footer {
     height: 20vw;
     width: 20vw;
     background-color: #febf52;
-    background-image: url("..//images/skills.png");
+    background-image: url("../images/skills.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right bottom;
@@ -1032,7 +1032,7 @@ footer {
     height: 20vw;
     width: 20vw;
     padding: 9.5vw 0 0 3vw;
-    background-image: url("..//images/img-desktop-grid.png");
+    background-image: url("../images/img-desktop-grid.png");
     background-repeat: no-repeat;
     background-size: 30%;
     background-position: 100% 25%;
