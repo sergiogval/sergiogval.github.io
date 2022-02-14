@@ -1,6 +1,6 @@
 /* eslint-disable prefer-destructuring */
 const modal = document.querySelector('.modal');
-const modalTitle = document.querySelector('.modalTitle');
+const modalTitle = document.querySelector('.modal-title');
 const languageOne = document.querySelector('#languageOne');
 const languageTwo = document.querySelector('#languageTwo');
 const languageThree = document.querySelector('#languageThree');
@@ -15,8 +15,8 @@ modal.style.display = 'none';
 const projects = [
   {
     id: 0,
-    title: 'Awesome-Books',
-    description: 'This project is a simple Single Page App (SPA) that was made using no frameworks. It allows to de user  add and remove items as well as storage them locally in order to avoid lose data.',
+    title: 'Awesome Books',
+    description: 'This project is a simple Single Page App (SPA) that was made using no frameworks. It allows the user to add and remove items, as well as storage them locally in order to avoid lose data.',
     picture: '..//images/project1.png',
     languages: ['html/css', 'JavaScript', 'GIT'],
     demo: 'https://sergiogval.github.io/awesome-books/',
@@ -87,13 +87,13 @@ for (let i = 0; i < projects.length; i += 1) {
   const card = document.createElement('div');
   card.className = 'card';
   card.innerHTML = `
-  <img src=${projects[i].picture} alt=${projects[i].title} class="cardPicture" >
-  <div class="cardContent">
-  <h3 class="cardTitle">${projects[i].title}</h3>
-  <ul class="cardLanguages">
-    <li class=cardBadges>${projects[i].languages[0]}</li>
-    <li class=cardBadges>${projects[i].languages[1]}</li>
-    <li class=cardBadges>${projects[i].languages[2]}</li>
+  <img src=${projects[i].picture} alt=${projects[i].title} class="card-picture" >
+  <div class="card-content">
+  <h3 class="card-title">${projects[i].title}</h3>
+  <ul class="card-languages">
+    <li class="card-badges">${projects[i].languages[0]}</li>
+    <li class="card-badges">${projects[i].languages[1]}</li>
+    <li class="card-badges">${projects[i].languages[2]}</li>
   </ul>
   <button type=button class="btn4" id="${projects[i].id}">See project</button>
   </div>`;
