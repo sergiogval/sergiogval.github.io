@@ -252,10 +252,8 @@
     font-size: 2em;
     width: 49%;
     height: 40%;
-    position: absolute;
-    top: 120%;
+    position: relative;
     left: 25%;
-    margin-top: 12%;
     z-index: 10;
   }
 
