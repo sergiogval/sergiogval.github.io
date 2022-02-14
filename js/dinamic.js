@@ -6,8 +6,8 @@ const languageTwo = document.querySelector('#languageTwo');
 const languageThree = document.querySelector('#languageThree');
 const picture = document.querySelector('#picture');
 const modalDescription = document.querySelector('#modalDescription');
-const modalDemo = document.querySelector('#modalDemo');
-const modalSource = document.querySelector('#modalSource');
+const modalDemo = document.querySelector('.modal-demo');
+const modalSource = document.querySelector('.modal-source');
 const closeModal = document.getElementById('closeBtn');
 
 modal.style.display = 'none';
@@ -78,8 +78,8 @@ const createModal = (i) => {
     languageThree.innerText = projects[i].languages[2];
     picture.src = projects[i].picture;
     modalDescription.innerText = projects[i].description;
-    modalDemo.innerText = projects[i].demo;
-    modalSource.innerText = projects[i].source;
+    modalDemo.href = projects[i].demo;
+    modalSource.href = projects[i].source;
   });
 };
 
