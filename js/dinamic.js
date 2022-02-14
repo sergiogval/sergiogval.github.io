@@ -17,7 +17,7 @@ const projects = [
     id: 0,
     title: 'Awesome Books',
     description: 'This project is a simple Single Page App (SPA) that was made using no frameworks. It allows the user to add and remove items, as well as storage them locally in order to avoid lose data.',
-    picture: '..//images/project1.png',
+    picture: '../images/project1.png',
     languages: ['html/css', 'JavaScript', 'GIT'],
     demo: 'https://sergiogval.github.io/awesome-books/',
     source: 'https://github.com/sergiogval/awesome-books',
