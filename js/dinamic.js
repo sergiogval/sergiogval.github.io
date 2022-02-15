@@ -24,12 +24,12 @@ const projects = [
   },
   {
     id: 1,
-    title: 'Pomodoro Clock',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
-    picture: '..//images/project2.png',
-    languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
-    demo: 'https://pomodoro-clock-jr.herokuapp.com/',
-    source: 'https://www.github.com/sergiogval',
+    title: 'Conference page (mockup)',
+    description: 'This project was made in order to show my skills to develop a page, taking a given look and feel. It is in part build dynamically using JS DOM manipulation.',
+    picture: 'images/project2.png',
+    languages: ['html/css', 'GIT', 'JavaScript'],
+    demo: 'https://sergiogval.github.io/capstone-conference-page/',
+    source: 'https://github.com/sergiogval/capstone-conference-page',
   },
   {
     id: 2,
