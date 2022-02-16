@@ -11,7 +11,7 @@ const modalSource = document.querySelector('.modal-source');
 const closeModal = document.getElementById('closeBtn');
 
 modal.style.display = 'none';
-
+// TODO: Add the proper fonts to the css topnav file
 const projects = [
   {
     id: 0,
