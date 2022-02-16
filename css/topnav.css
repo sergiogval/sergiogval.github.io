@@ -749,10 +749,9 @@ footer {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    flex: 1;
+    flex-wrap: wrap;
     min-width: 95%;
     padding-block: 2rem;
-    margin-inline: auto;
   }
 
   .portfolio-header {
@@ -770,7 +769,6 @@ footer {
     flex-direction: row;
     overflow-y: hidden;
     position: relative;
-    flex-basis: content;
   }
 
   #a0 {
@@ -791,7 +789,7 @@ footer {
   }
 
   .card-content {
-    transform: translateY(130%);
+    transform: translateY(145%);
     transition: transform 0.4s ease-in-out;
     position: absolute;
     width: 100%;
@@ -799,7 +797,7 @@ footer {
   }
 
   .card:hover .card-content {
-    transform: translateY(30%);
+    transform: translateY(45%);
     width: 100%;
   }
 
