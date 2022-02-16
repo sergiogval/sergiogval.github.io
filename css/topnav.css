@@ -745,60 +745,186 @@ footer {
   }
 
   .portfolio {
-    top: 10vh;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    flex-wrap: wrap;
-    min-width: 95%;
-    padding-block: 2rem;
   }
 
   .portfolio-header {
-    margin: 0 5% 0 0;
+    margin: 0;
     padding: 0;
-    font-size: 7rem;
-    display: inline-flex;
+    font-size: 8em;
+    display: flex;
     transform: rotate(-90deg);
-    justify-content: left;
-    align-items: start;
+    position: relative;
+    top: 10vh;
   }
 
-  .card {
+  .card0 {
     display: flex;
     flex-direction: row;
     overflow-y: hidden;
     position: relative;
+    margin-block: 1%;
+    padding-block: 1%;
+    left: 30%;
   }
 
-  #a0 {
-    display: grid;
-    position: relative;
-    width: 66vw;
-    height: 33vw;
-    grid-gap: 10px;
-    margin: 0;
+  .card0 img {
+    width: 65%;
   }
 
-  #a1.card-picture {
-    display: grid;
-    grid-column: 1 span4;
-    grid-row: 3 span2;
-    position: relative;
-    min-width: auto;
-  }
-
-  .card-content {
-    transform: translateY(145%);
-    transition: transform 0.4s ease-in-out;
+  .card0.card-content {
+    transform: translateY(140vh);
     position: absolute;
-    width: 100%;
-    max-height: 100%;
+    height: 70%;
+    width: 65%;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
   }
 
-  .card:hover .card-content {
-    transform: translateY(45%);
-    width: 100%;
+  .card0:hover .card-content {
+    transform: translateY(23vh);
+    opacity: 1;
+  }
+
+  .card1 {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    position: relative;
+    margin-block: 1%;
+    padding-block: 1%;
+  }
+
+  .card1 img {
+    width: auto;
+  }
+
+  .card1.card-content {
+    transform: translateY(140vh);
+    position: absolute;
+    height: 70%;
+    width: auto;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+  }
+
+  .card1:hover .card-content {
+    transform: translateY(23vh);
+    opacity: 1;
+  }
+
+  .card2 {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    position: relative;
+    margin-block: 1%;
+    padding-block: 1%;
+    left: 30%;
+  }
+
+  .card2 img {
+    width: 65%;
+  }
+
+  .card2.card-content {
+    transform: translateY(140vh);
+    position: absolute;
+    height: 70%;
+    width: 65%;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+  }
+
+  .card2:hover .card-content {
+    transform: translateY(23vh);
+    opacity: 1;
+  }
+
+  .card3 {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    position: relative;
+    margin-block: 1%;
+    padding-block: 1%;
+    left: 30%;
+  }
+
+  .card3 img {
+    width: 65%;
+  }
+
+  .card3.card-content {
+    transform: translateY(140vh);
+    position: absolute;
+    height: 70%;
+    width: 65%;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+  }
+
+  .card3:hover .card-content {
+    transform: translateY(23vh);
+    opacity: 1;
+  }
+
+  .card4 {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    position: relative;
+    margin-block: 1%;
+    padding-block: 1%;
+    left: 30%;
+  }
+
+  .card4 img {
+    width: 65%;
+  }
+
+  .card4.card-content {
+    transform: translateY(140vh);
+    position: absolute;
+    height: 70%;
+    width: 65%;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+  }
+
+  .card4:hover .card-content {
+    transform: translateY(23vh);
+    opacity: 1;
+  }
+
+  .card5 {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    position: relative;
+    margin-block: 1%;
+    padding-block: 1%;
+    left: 30%;
+  }
+
+  .card5 img {
+    width: 65%;
+  }
+
+  .card5 .card-content {
+    transform: translateY(140vh);
+    position: absolute;
+    height: 70%;
+    width: 65%;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+  }
+
+  .card5:hover .card-content {
+    transform: translateY(23vh);
+    opacity: 1;
   }
 
   .introcontact {

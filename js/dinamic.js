@@ -85,10 +85,10 @@ const createModal = (i) => {
 
 for (let i = 0; i < projects.length; i += 1) {
   const card = document.createElement('div');
-  card.className = ('card');
+  card.className = `card${projects[i].id}`;
   card.innerHTML = `
-  <img id="a${projects[i].id}" src=${projects[i].picture} alt="${projects[i].title}" class="card-picture" >
-  <div class="card-content">
+  <img src=${projects[i].picture} alt="${projects[i].title}" class="card-picture" >
+  <div class="card-content">                                                                                                                                                                                                                                            
   <h3 class="card-title">${projects[i].title}</h3>
   <ul class="card-languages">
     <li class="card-badges">${projects[i].languages[0]}</li>
