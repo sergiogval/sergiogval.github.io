@@ -1,9 +1,4 @@
-@import URL("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import URL("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   outline: none;
 }
@@ -14,11 +9,6 @@
   outline: inherit;
 }
 
-html {
-  box-sizing: border-box;
-  overflow: scroll;
-}
-
 body {
   font-family: Poppins, sans-serif;
   height: 100vh;
@@ -26,7 +16,6 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  outline: none;
   font-size: 62.8%;
 }
 
@@ -657,7 +646,7 @@ footer {
 
 @media (min-width: 868px) {
   body {
-    font-size: 80% !important;
+    font-size: 80%;
   }
 
   .navbar {
@@ -699,6 +688,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     position: relative;
     top: 10vh;
+    margin-bottom: 10vh;
   }
 
   .desktop-home {
@@ -742,6 +732,144 @@ footer {
     padding: 6%;
     box-sizing: border-box;
   }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.7fr 1fr 1fr;
+    grid-template-rows: 37.4vw 4vw 8vw 6vw 6vw 12vw repeat(3, 6vw) 9vw 9vw;
+    width: auto;
+  }
+
+  .portfolio-header {
+    grid-column: 1/3;
+    grid-row: 1;
+    margin: 0;
+    padding: 0;
+    font-size: 8em;
+    display: flex;
+    transform: rotate(-90deg);
+    position: relative;
+  }
+
+  .card0,
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card0 {
+    grid-row: 1/2;
+    grid-column: 4/10;
+  }
+
+  .card1 {
+    grid-row: 3/6;
+    grid-column: 1/4;
+  }
+
+  .card2 {
+    grid-row: 6/10;
+    grid-column: 1/6;
+  }
+
+  .card3 {
+    grid-row: 10/12;
+    grid-column: 6/9;
+  }
+
+  .card4 {
+    grid-row: 5/7;
+    grid-column: 7/10;
+  }
+
+  .card5 {
+    grid-row: 2/5;
+    grid-column: 7/10;
+  }
+
+  .card0 img,
+  .card1 img,
+  .card2 img,
+  .card3 img,
+  .card4 img,
+  .card5 img {
+    width: 100%;
+  }
+
+  .card0 .card-content,
+  .card1 .card-content,
+  .card2 .card-content,
+  .card3 .card-content,
+  .card4 .card-content,
+  .card5 .card-content {
+    transform: translateY(0);
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    transition: 0.6s ease-in-out;
+    flex: 1;
+    padding: 0;
+  }
+
+  .card0:hover .card-content,
+  .card1:hover .card-content,
+  .card2:hover .card-content,
+  .card3:hover .card-content,
+  .card4:hover .card-content,
+  .card5:hover .card-content {
+    transform: translateY(-101%);
+    opacity: 1;
+    max-height: 100%;
+    width: 100%;
+  }
+
+  /* TODO: Add figures
+  #projectimg1 {
+    background-image: url("../images/projectimg1.png");
+    background-size: 100%;
+    grid-column: 4/7;
+    grid-row: 2/6;
+    margin: 0;
+    padding: 0;
+  }
+
+  #projectimg2 {
+    display: initial;
+    background-image: url("../images/projectimg2.png");
+    background-size: 100%;
+    grid-column: 6/10;
+    grid-row: 7/10;
+    margin: 0;
+    padding: 0;
+  }
+
+  #projectimg3 {
+    display: initial;
+    background-image: url("../images/projectimg3.png");
+    background-size: 100%;
+    background-position: left top;
+    grid-column: 1/3;
+    grid-row: 10;
+    margin: 0;
+    padding: 0;
+  }
+
+  #projectimg4 {
+    display: initial;
+    background-image: url("../images/projectimg4.png");
+    background-position: right top;
+    background-size: 100%;
+    grid-column: 5;
+    grid-row: 10;
+    margin: 0;
+    padding: 0;
+  } */
 
   .introcontact {
     font-family: poppins, sans-serif;
