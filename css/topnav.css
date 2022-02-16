@@ -699,6 +699,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     position: relative;
     top: 10vh;
+    margin-bottom: 10vh;
   }
 
   .desktop-home {
@@ -741,6 +742,65 @@ footer {
     margin: 1%;
     padding: 6%;
     box-sizing: border-box;
+  }
+
+  .portfolio {
+    top: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex: 1;
+    min-width: 95%;
+    padding-block: 2rem;
+    margin-inline: auto;
+  }
+
+  .portfolio-header {
+    margin: 0 5% 0 0;
+    padding: 0;
+    font-size: 7rem;
+    display: inline-flex;
+    transform: rotate(-90deg);
+    justify-content: left;
+    align-items: start;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    position: relative;
+    flex-basis: content;
+  }
+
+  #a0 {
+    display: grid;
+    position: relative;
+    width: 66vw;
+    height: 33vw;
+    grid-gap: 10px;
+    margin: 0;
+  }
+
+  #a1.card-picture {
+    display: grid;
+    grid-column: 1 span4;
+    grid-row: 3 span2;
+    position: relative;
+    min-width: auto;
+  }
+
+  .card-content {
+    transform: translateY(130%);
+    transition: transform 0.4s ease-in-out;
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+  }
+
+  .card:hover .card-content {
+    transform: translateY(30%);
+    width: 100%;
   }
 
   .introcontact {
