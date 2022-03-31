@@ -8,5 +8,29 @@
     "stylelint-config-standard": "^25.0.0",
     "stylelint-csstree-validator": "^2.0.0",
     "stylelint-scss": "^4.1.0"
-  }
+  },
+  "name": "sergiogval.github.io",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiogval/sergiogval.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "webapp",
+    "coder",
+    "sergio",
+    "valadez"
+  ],
+  "author": "Sergio Guadalupe Valadez Rivera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiogval/sergiogval.github.io/issues"
+  },
+  "homepage": "https://github.com/sergiogval/sergiogval.github.io#readme"
 }
