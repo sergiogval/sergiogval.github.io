@@ -43,6 +43,7 @@ body {
 }
 
 .navbar {
+  position: fixed;
   border-bottom: 1px solid #dee2e6;
   display: flex;
   justify-content: center;
