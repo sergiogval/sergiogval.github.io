@@ -38,8 +38,6 @@
   position: absolute;
   cursor: pointer;
   top: 1rem;
-
-  /* font-weight: 500; */
 }
 
 .modal-title {
@@ -167,7 +165,7 @@
 
 @media (min-width: 992px) {
   body {
-    font-size: 50%;
+    font-size: 80%;
   }
 
   .modal {

@@ -330,7 +330,7 @@ li > a:focus {
   padding: 1em;
   margin: 1em;
   border-radius: 2px;
-  transition: 0.2s 0.1s;
+  transition: 0.1s ease-in-out;
   text-align: center;
 }
 
@@ -646,7 +646,7 @@ footer {
 
 @media (min-width: 868px) {
   body {
-    font-size: 80%;
+    font-size: 70%;
   }
 
   .navbar {
