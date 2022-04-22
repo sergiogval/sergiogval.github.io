@@ -11,7 +11,6 @@ const modalSource = document.querySelector('.modal-source');
 const closeModal = document.getElementById('closeBtn');
 
 modal.style.display = 'none';
-// TODO: Add the proper fonts to the css topnav file
 const projects = [
   {
     id: 0,
@@ -52,7 +51,7 @@ const projects = [
   {
     id: 4,
     title: 'Drink water tracker',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
+    description: 'This project is just a tracker for the amount of water drunk during a given day. It was made with pure css and vanilla JS. It has a nice UI and an intuitive UX.',
     picture: '..//images/project5.png',
     languages: ['html', 'CSS', 'JavaScript'],
     demo: 'https://sergiogval.github.io/fluffy-engine/',
@@ -62,7 +61,7 @@ const projects = [
     id: 5,
     title: 'Calculator',
     description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus libero nostrum placeat corporis eum rem culpa perspiciatis. Autem natus minima rem, fugiat consequatur illo pariatur itaque hic porro eligendi dignissimos.',
-    picture: '..//images/project4.png',
+    picture: '..//images/project6.png',
     languages: ['html/css', 'Ruby on Rails', 'JavaScript'],
     demo: 'https://pomodoro-clock-jr.herokuapp.com/',
     source: 'https://www.github.com/sergiogval',
