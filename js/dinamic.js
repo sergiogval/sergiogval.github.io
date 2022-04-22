@@ -33,7 +33,7 @@ const projects = [
   {
     id: 2,
     title: 'ToDo: list',
-    description: 'This project allows to the user make a tasks to do list. It is created with bootstrap framwork. It has an easy and friendly interface',
+    description: 'This project allows to the user make a tasks to do list. It is created with bootstrap framework. It has an easy and friendly interface',
     picture: '..//images/project3.png',
     languages: ['html/css', 'Bootstrap', 'JavaScript'],
     demo: 'https://sergiogval.github.io/TODO_listing/',
